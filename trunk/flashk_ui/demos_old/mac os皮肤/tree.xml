@@ -1,0 +1,22 @@
+
+    <file id="1" label="所有地图" link="">
+      <file label="新地图" name="新地图" id="7" link=""/>
+      <file id="2" label="新关卡(0)" name="新关卡" link="">
+        <file label="新地图" name="新地图" id="9" link="">
+          <file icon="IconS2" label="新地图" name="新地图" id="11" link="">
+            <file label="新地图" name="新地图" id="17" link="">
+              <file label="新地图" name="新地图" id="18" link=""/>
+            </file>
+            <file label="新地图" name="新地图" id="15" link=""/>
+          </file>
+          <file label="新地图" name="新地图" id="16" link=""/>
+        </file>
+        <file label="新地图" name="新地图" id="10" link=""/>
+        <file label="新地图" name="新地图" id="6" link=""/>
+      </file>
+      <file label="新地图" name="新地图" id="8" link="">
+        <file label="新地图" name="新地图" id="12" link=""/>
+      </file>
+      <file label="新地图" name="新地图" id="13" link=""/>
+      <file label="新地图" name="新地图" id="14" link=""/>
+    </file>

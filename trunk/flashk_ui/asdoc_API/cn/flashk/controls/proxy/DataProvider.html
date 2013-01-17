@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="DataProvider,cn.flashk.controls.proxy.DataProvider,icon,label,length,value,addItem,addItemAt,addItems,addItemsAt,clone,concat,getItemAt,getItemIndex,invalidate,invalidateItem,invalidateItemAt,merge,removeAll,removeItem,removeItemAt,replaceItem,replaceItemAt,sort,sortOn,toArray,toString"><title>cn.flashk.controls.proxy.DataProvider</title></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'DataProvider - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?cn/flashk/controls/proxy/DataProvider.html&amp;cn/flashk/controls/proxy/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">DataProvider</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("DataProvider"); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">cn.flashk.controls.proxy</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  DataProvider</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">DataProvider  <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p></p>
+		             <p>DataProvider 类提供一些方法和属性，这些方法和属性允许您查询和修改任何基于列表的组件（例如，List、DataGrid、TileList 或 ComboBox 组件）中的数据。 </p>
+		             <p>数据提供者 是用作数据源的项目的线性集合，例如，一个数组。 数据提供者中的每个项目都是包含一个或多个数据字段的对象或 XML 对象。 </p>
+		             <p>通过使用 DataProvider.getItemAt() 方法，可以按索引访问数据提供者中包含的项目。</p>
+		 
+		          <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#length" class="signatureLink">length</a> : uint<div class="summaryTableDescription">[read-only] 
+			 数据提供者包含的项目数。
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#DataProvider()" class="signatureLink">DataProvider</a>(value:Object = null)</div><div class="summaryTableDescription">
+			 将一个二维数组、XML、 DataProvider转化为DataProvider（如果提供了value值）
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addItem()" class="signatureLink">addItem</a>(item:Object):void</div><div class="summaryTableDescription">
+			 将项目追加到数据提供者的结尾。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addItemAt()" class="signatureLink">addItemAt</a>(item:Object, index:uint):void</div><div class="summaryTableDescription">
+			 将新项目添加到数据提供者的指定索引处。 如果指定的索引超过数据提供者的长度，则忽略该索引。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addItems()" class="signatureLink">addItems</a>(items:Object):void</div><div class="summaryTableDescription">
+			 向 DataProvider 的末尾追加多个项目，并调度 DataChangeType.ADD 事件。 按照指定项目的顺序添加项目。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addItemsAt()" class="signatureLink">addItemsAt</a>(items:Object, index:uint):void</div><div class="summaryTableDescription">
+			 向数据提供者的指定索引处添加若干项目，并调度 DataChangeType.ADD 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clone()" class="signatureLink">clone</a>():<a href="../../../../cn/flashk/controls/proxy/DataProvider.html">DataProvider</a></div><div class="summaryTableDescription">
+			 Creates a copy of the current DataProvider object.</div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#concat()" class="signatureLink">concat</a>(items:Object):void</div><div class="summaryTableDescription">
+			 将指定项目连接到当前数据提供者的结尾。 此方法调度 DataChangeType.ADD 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getItemAt()" class="signatureLink">getItemAt</a>(index:uint):Object</div><div class="summaryTableDescription">
+			 返回指定索引处的项目。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getItemIndex()" class="signatureLink">getItemIndex</a>(item:Object):int</div><div class="summaryTableDescription">
+			 返回指定项目的索引。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#invalidate()" class="signatureLink">invalidate</a>():void</div><div class="summaryTableDescription">
+			 使 DataProvider 包含的所有数据项失效，并调度 DataChangeEvent.INVALIDATE_ALL 事件。
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#invalidateItem()" class="signatureLink">invalidateItem</a>(item:Object):void</div><div class="summaryTableDescription">
+			 使指定的项目失效。
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#invalidateItemAt()" class="signatureLink">invalidateItemAt</a>(index:int):void</div><div class="summaryTableDescription">
+			 使指定索引处的项目失效。
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#merge()" class="signatureLink">merge</a>(newData:Object):void</div><div class="summaryTableDescription">
+			 将指定数据追加到数据提供者包含的数据，并删除任何重复的项目。 此方法调度 DataChangeType.ADD 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeAll()" class="signatureLink">removeAll</a>():void</div><div class="summaryTableDescription">
+			 从数据提供者中删除所有项目，并调度 DataChangeType.REMOVE_ALL 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeItem()" class="signatureLink">removeItem</a>(item:Object):Object</div><div class="summaryTableDescription">
+			 从数据提供者中删除指定项目，并调度 DataChangeType.REMOVE 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeItemAt()" class="signatureLink">removeItemAt</a>(index:uint):Object</div><div class="summaryTableDescription">
+			 删除指定索引处的项目，并调度 DataChangeType.REMOVE 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#replaceItem()" class="signatureLink">replaceItem</a>(newItem:Object, oldItem:Object):Object</div><div class="summaryTableDescription">
+			 用新项目替换现有项目，并调度 DataChangeType.REPLACE 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#replaceItemAt()" class="signatureLink">replaceItemAt</a>(newItem:Object, index:uint):Object</div><div class="summaryTableDescription">
+			  替换指定索引处的项目，并调度 DataChangeType.REPLACE 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sort()" class="signatureLink">sort</a>(... sortArgs):*</div><div class="summaryTableDescription">
+			 对数据提供者包含的项目进行排序，并调度 DataChangeType.SORT 事件。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sortOn()" class="signatureLink">sortOn</a>(fieldName:Object, options:Object = null):*</div><div class="summaryTableDescription">
+			 按指定字段对数据提供者包含的项目进行排序，并调度 DataChangeType.SORT 事件。 指定字段可以是字符串或字符串值数组，这些字符串值指定要按优先顺序对其进行排序的多个字段。
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toArray()" class="signatureLink">toArray</a>():Array</div><div class="summaryTableDescription">
+			 创建数据提供者包含的数据的 Array 对象表示形式。 
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():String</div><div class="summaryTableDescription">[override] 
+			 创建数据提供者包含的数据的字符串表示形式。
+			 
+			 </div></td><td class="summaryTableOwnerCol">DataProvider</td></tr></table></div><a name="eventSummary"></a><div class="summarySection"><div class="summaryTableTitle">Events</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:dataChange" class="signatureLink">dataChange</a></div></td><td class="summaryTableDescription summaryTableCol">在更改数据之后调度。</td><td class="summaryTableOwnerCol">DataProvider</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:preDataChange" class="signatureLink">preDataChange</a></div></td><td class="summaryTableDescription summaryTableCol">在更改数据之前调度。</td><td class="summaryTableOwnerCol">DataProvider</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="length"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">length</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>length:uint</code>&nbsp;&nbsp;[read-only] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 数据提供者包含的项目数。
+			 
+			 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():uint</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="DataProvider()"></a><a name="DataProvider(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">DataProvider</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function DataProvider(value:Object = null)</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p>
+			 将一个二维数组、XML、 DataProvider转化为DataProvider（如果提供了value值）
+			 
+			 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; The data that is used to create the DataProvider.
+			 
+			 </td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="addItem()"></a><a name="addItem(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addItem(item:Object):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 将项目追加到数据提供者的结尾。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; 要追加到当前数据提供者的结尾的项目。 
+			 
+			 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#addItemAt()" target="">addItemAt()</a><br/><a href="DataProvider.html#addItems()" target="">addItems()</a><br/><a href="DataProvider.html#addItemsAt()" target="">addItemsAt()</a></div></div><a name="addItemAt()"></a><a name="addItemAt(Object,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addItemAt(item:Object, index:uint):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 将新项目添加到数据提供者的指定索引处。 如果指定的索引超过数据提供者的长度，则忽略该索引。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; 包含要添加的项目数据的对象。
+			 
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash;  要在其位置添加项目的索引。 
+			 
+			 </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>RangeError </code> &mdash; The specified index is less than 0 or greater than or equal 
+			         to the length of the data provider.
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#addItem()" target="">addItem()</a><br/><a href="DataProvider.html#addItems()" target="">addItems()</a><br/><a href="DataProvider.html#addItemsAt()" target="">addItemsAt()</a><br/><a href="DataProvider.html#getItemAt()" target="">getItemAt()</a><br/><a href="DataProvider.html#removeItemAt()" target="">removeItemAt()</a></div></div><a name="addItems()"></a><a name="addItems(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addItems</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addItems(items:Object):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 向 DataProvider 的末尾追加多个项目，并调度 DataChangeType.ADD 事件。 按照指定项目的顺序添加项目。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">items</span>:Object</code> &mdash; 要追加到数据提供者的项目。
+			 
+			 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#addItem()" target="">addItem()</a><br/><a href="DataProvider.html#addItemAt()" target="">addItemAt()</a><br/><a href="DataProvider.html#addItemsAt()" target="">addItemsAt()</a></div></div><a name="addItemsAt()"></a><a name="addItemsAt(Object,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addItemsAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function addItemsAt(items:Object, index:uint):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 向数据提供者的指定索引处添加若干项目，并调度 DataChangeType.ADD 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">items</span>:Object</code> &mdash; 要添加到数据提供者的项目。
+			 
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; 要在其位置插入项目的索引。  
+			 
+			 </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>RangeError </code> &mdash; The specified index is less than 0 or greater than or equal 
+			                    to the length of the data provider.
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#addItem()" target="">addItem()</a><br/><a href="DataProvider.html#addItemAt()" target="">addItemAt()</a><br/><a href="DataProvider.html#addItems()" target="">addItems()</a></div></div><a name="clone()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function clone():<a href="../../../../cn/flashk/controls/proxy/DataProvider.html">DataProvider</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 Creates a copy of the current DataProvider object.
+			 
+			 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../cn/flashk/controls/proxy/DataProvider.html">DataProvider</a></code> &mdash; A new instance of this DataProvider object.
+			 
+			 </td></tr></table></div><a name="concat()"></a><a name="concat(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">concat</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function concat(items:Object):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 将指定项目连接到当前数据提供者的结尾。 此方法调度 DataChangeType.ADD 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">items</span>:Object</code> &mdash; 要添加到数据提供者的项目。 
+			 
+			 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#addItems()" target="">addItems()</a><br/><a href="DataProvider.html#merge()" target="">merge()</a></div></div><a name="getItemAt()"></a><a name="getItemAt(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getItemAt(index:uint):Object</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 返回指定索引处的项目。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; 要返回的项目的位置。 
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; 指定索引处的项目。 
+			 
+			 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>RangeError </code> &mdash; 指定的索引小于 0 或大于等于数据提供者的长度。 
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#getItemIndex()" target="">getItemIndex()</a><br/><a href="DataProvider.html#removeItemAt()" target="">removeItemAt()</a></div></div><a name="getItemIndex()"></a><a name="getItemIndex(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getItemIndex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getItemIndex(item:Object):int</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 返回指定项目的索引。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; 要查找的项目。 
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; 指定项目的索引；如果没有找到指定项目，则为 -1。 
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#getItemAt()" target="">getItemAt()</a></div></div><a name="invalidate()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">invalidate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function invalidate():void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 使 DataProvider 包含的所有数据项失效，并调度 DataChangeEvent.INVALIDATE_ALL 事件。
+			 
+			 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#invalidateItem()" target="">invalidateItem()</a><br/><a href="DataProvider.html#invalidateItemAt()" target="">invalidateItemAt()</a></div></div><a name="invalidateItem()"></a><a name="invalidateItem(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">invalidateItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function invalidateItem(item:Object):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 使指定的项目失效。
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; Item to be invalidated.
+			 
+			 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#invalidate()" target="">invalidate()</a><br/><a href="DataProvider.html#invalidateItemAt()" target="">invalidateItemAt()</a></div></div><a name="invalidateItemAt()"></a><a name="invalidateItemAt(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">invalidateItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function invalidateItemAt(index:int):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 使指定索引处的项目失效。
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:int</code> &mdash; Index of the item to be invalidated.
+			 
+			 </td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>RangeError </code> &mdash; The specified index is less than 0 or greater than 
+			         or equal to the length of the data provider.
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#invalidate()" target="">invalidate()</a><br/><a href="DataProvider.html#invalidateItem()" target="">invalidateItem()</a></div></div><a name="merge()"></a><a name="merge(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">merge</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function merge(newData:Object):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 将指定数据追加到数据提供者包含的数据，并删除任何重复的项目。 此方法调度 DataChangeType.ADD 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">newData</span>:Object</code> &mdash; 要合并到数据提供者的数据。 
+			 
+			 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#concat()" target="">concat()</a></div></div><a name="removeAll()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeAll():void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 从数据提供者中删除所有项目，并调度 DataChangeType.REMOVE_ALL 事件。 
+			 
+			 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#removeItem()" target="">removeItem()</a><br/><a href="DataProvider.html#removeItemAt()" target="">removeItemAt()</a></div></div><a name="removeItem()"></a><a name="removeItem(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeItem(item:Object):Object</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 从数据提供者中删除指定项目，并调度 DataChangeType.REMOVE 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; 要删除的项目。 
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; 被删除的项目。 
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#removeAll()" target="">removeAll()</a><br/><a href="DataProvider.html#removeItemAt()" target="">removeItemAt()</a></div></div><a name="removeItemAt()"></a><a name="removeItemAt(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeItemAt(index:uint):Object</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 删除指定索引处的项目，并调度 DataChangeType.REMOVE 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; 要删除的项目的索引。 
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; 被删除的项目。 
+			 
+			 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>RangeError </code> &mdash; 指定的索引小于 0 或大于等于数据提供者的长度。 
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#removeAll()" target="">removeAll()</a><br/><a href="DataProvider.html#removeItem()" target="">removeItem()</a></div></div><a name="replaceItem()"></a><a name="replaceItem(Object,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">replaceItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function replaceItem(newItem:Object, oldItem:Object):Object</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 用新项目替换现有项目，并调度 DataChangeType.REPLACE 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">newItem</span>:Object</code> &mdash; 被替换的项目。
+			 
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">oldItem</span>:Object</code> &mdash; 要替换的项目。
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; 被替换的项目。 
+			 
+			 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>RangeError </code> &mdash; 无法在数据提供者中找到项目。 
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#replaceItemAt()" target="">replaceItemAt()</a></div></div><a name="replaceItemAt()"></a><a name="replaceItemAt(Object,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">replaceItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function replaceItemAt(newItem:Object, index:uint):Object</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			  替换指定索引处的项目，并调度 DataChangeType.REPLACE 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">newItem</span>:Object</code> &mdash; 替换项目。 
+			 
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; 要替换的项目的索引。
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code> &mdash; 被替换的项目。 
+			 
+			 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>RangeError </code> &mdash; 指定的索引小于 0 或大于等于数据提供者的长度。
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#replaceItem()" target="">replaceItem()</a></div></div><a name="sort()"></a><a name="sort(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sort</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function sort(... sortArgs):*</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 对数据提供者包含的项目进行排序，并调度 DataChangeType.SORT 事件。 
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">sortArgs</span></code> &mdash; 用于排序的参数。 
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>*</code> &mdash; 返回值取决于方法是否接收任何参数。 有关详细信息，请参阅 Array.sort() 方法。 当 sortOption 属性设置为 Array.UNIQUESORT 时，该方法返回 0。
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#sortOn()" target="">sortOn()</a><br/>Array.sort()</div></div><a name="sortOn()"></a><a name="sortOn(Object,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sortOn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function sortOn(fieldName:Object, options:Object = null):*</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 按指定字段对数据提供者包含的项目进行排序，并调度 DataChangeType.SORT 事件。 指定字段可以是字符串或字符串值数组，这些字符串值指定要按优先顺序对其进行排序的多个字段。
+			 
+			 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fieldName</span>:Object</code> &mdash; 要按其进行排序的项目字段。 该值可以是字符串或字符串值数组。
+			 
+			 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">options</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; 用于排序的选项。 
+			 
+			 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>*</code> &mdash; 返回值取决于方法是否接收任何参数。 有关详细信息，请参阅“Array.sortOn() 方法”。 如果 sortOption 属性设置为 Array.UNIQUESORT，则该方法返回 0。
+			 
+			 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#sort()" target="">sort()</a><br/>Array.sortOn()</div></div><a name="toArray()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">toArray</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toArray():Array</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 创建数据提供者包含的数据的 Array 对象表示形式。 
+			 
+			 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Array</code> &mdash; 数据提供者包含的数据的 Array 对象表示形式。 
+			 
+			 </td></tr></table></div><a name="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override public function toString():String</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+			 创建数据提供者包含的数据的字符串表示形式。
+			 
+			 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; 数据提供者包含的数据的字符串表示形式。
+			 
+			 </td></tr></table></div><div class="detailSectionHeader"> Event Detail </div><a name="event:dataChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dataChange</td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../cn/flashk/controls/events/DataChangeEvent.html"><code>cn.flashk.controls.events.DataChangeEvent</code></a><br/><span class="label">DataChangeEvent.type property = </span><a href="../../../../cn/flashk/controls/events/DataChangeEvent.html#DATA_CHANGE"><code>cn.flashk.controls.events.DataChangeEvent.DATA_CHANGE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+		 在更改数据之后调度。
+		 
+		 </p>
+         定义 dataChange 事件对象的 type 属性值。 
+		 
+		 <p>此事件具有以下属性：</p>
+		  <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>changeType</code></td><td>Identifies the type of change that was made.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing 
+		 			the event object with an event listener.</td></tr><tr><td><code>endIndex</code></td><td>Identifies the index of the last changed item.</td></tr><tr><td><code>items</code></td><td>An array that lists the items that were changed.</td></tr><tr><td><code>startIndex</code></td><td>Identifies the index of the first changed item.</td></tr><tr><td><code>target</code></td><td>The object that dispatched the event. The target is 
+                   not always the object listening for the event. Use the <code>currentTarget</code>
+		 			property to access the object that is listening for the event.</td></tr></table>
+         
+         <p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#event:preDataChange" target="">preDataChange event</a></div></div><a name="event:preDataChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">preDataChange</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../cn/flashk/controls/events/DataChangeEvent.html"><code>cn.flashk.controls.events.DataChangeEvent</code></a><br/><span class="label">DataChangeEvent.type property = </span><a href="../../../../cn/flashk/controls/events/DataChangeEvent.html#PRE_DATA_CHANGE"><code>cn.flashk.controls.events.DataChangeEvent.PRE_DATA_CHANGE</code></a><br/><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p>
+		 在更改数据之前调度。
+		 
+		 </p>
+		 定义 preDataChange 事件对象的 type 属性值。该事件对象在更改组件数据之前调度。 
+		 
+		 <p>此事件具有以下属性：</p>
+		  <table class="innertable" ><tr><th>Property</th><th>Value</th></tr><tr><td><code>bubbles</code></td><td><code>false</code></td></tr><tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr><tr><td><code>changeType</code></td><td>Identifies the type of change to be made.</td></tr><tr><td><code>currentTarget</code></td><td>The object that is actively processing 
+		 			the event object with an event listener.</td></tr><tr><td><code>endIndex</code></td><td>Identifies the index of the last item to be
+		 			changed.</td></tr><tr><td><code>items</code></td><td>An array that lists the items to be changed.</td></tr><tr><td><code>startIndex</code></td><td>Identifies the index of the first item to be
+		         changed.</td></tr><tr><td><code>target</code></td><td>The object that dispatched the event. The target is 
+                  not always the object listening for the event. Use the <code>currentTarget</code>
+		 			property to access the object that is listening for the event.</td></tr></table>
+		 
+         <p><span class="label">See also</span></p><div class="seeAlso"><a href="DataProvider.html#event:dataChange" target="">dataChange event</a></div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Thu Jan 17 2013, 10:38 AM +08:00  </center></div></body></html><!--<br/>Thu Jan 17 2013, 10:38 AM +08:00  -->

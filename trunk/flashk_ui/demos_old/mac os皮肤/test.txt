@@ -1,0 +1,57 @@
+﻿包 fl.controls 
+类 public class TextArea 
+继承 TextArea  UIComponent  Sprite  DisplayObjectContainer  InteractiveObject  DisplayObject  EventDispatcher  Object 
+实现 IFocusManagerComponent 
+
+
+语言版本:  ActionScript 3.0 
+运行时版本:  AIR 1.0, Flash Player 9.0.28.0 
+
+
+
+
+TextArea 组件是一个带有边框和可选滚动条的多行文本字段。 TextArea 组件支持 Adobe Flash Player 的 HTML 呈现功能。 
+
+查看示例
+
+另请参见
+
+TextInput
+
+
+--------------------------------------------------------------------------------
+
+公共属性
+ 隐藏继承的公共属性
+ 显示继承的公共属性
+  属性 定义方 
+   accessibilityProperties : AccessibilityProperties
+此显示对象的当前辅助功能选项。  DisplayObject 
+   alpha : Number
+指示指定对象的 Alpha 透明度值。 DisplayObject 
+    alwaysShowSelection : Boolean
+获取或设置一个布尔值，指示当文本字段不具有焦点时 Flash Player 是否突出显示文本字段中的选定内容。 TextArea 
+   blendMode : String
+BlendMode 类中的一个值，用于指定要使用的混合模式。 DisplayObject 
+   blendShader : Shader
+[只写] 设置用于混合前景和背景的着色器。 DisplayObject 
+   buttonMode : Boolean
+指定此 sprite 的按钮模式。  Sprite 
+   cacheAsBitmap : Boolean
+如果设置为 true，则 Flash Player 将缓存显示对象的内部位图表示形式。 DisplayObject 
+    condenseWhite : Boolean
+获取或设置一个布尔值，该值指示是否从包含 HTML 文本的 TextArea 组件中删除额外空白。 TextArea 
+   constructor : Object
+对类对象或给定对象实例的构造函数的引用。 Object 
+   contextMenu : ContextMenu
+指定与此对象相关联的上下文菜单。 InteractiveObject 
+    displayAsPassword : Boolean
+获取或设置一个布尔值，该值指示 TextArea 组件实例是否是用于密码的文本字段。 TextArea 
+   doubleClickEnabled : Boolean
+指定此对象是否接收 doubleClick 事件。 InteractiveObject 
+   dropTarget : DisplayObject
+[只读 (read-only)] 指定拖动 sprite 时经过的显示对象，或放置 sprite 的显示对象。 Sprite 
+    editable : Boolean
+获取或设置一个布尔值，指示用户能否编辑组件中的文本。 TextArea 
+    enabled : Boolean
+获取或设置一个值，该值指示组件是否可以接受用户交互。 

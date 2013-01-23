@@ -1,5 +1,17 @@
 package cn.flashk.controls.support
 {
+	import cn.flashk.controls.List;
+	import cn.flashk.controls.events.ListEvent;
+	import cn.flashk.controls.interfaces.IListItemRender;
+	import cn.flashk.controls.managers.DefaultStyle;
+	import cn.flashk.controls.managers.SkinLoader;
+	import cn.flashk.controls.managers.SkinManager;
+	import cn.flashk.controls.managers.SkinThemeColor;
+	import cn.flashk.controls.managers.SourceSkinLinkDefine;
+	import cn.flashk.controls.managers.StyleManager;
+	import cn.flashk.controls.managers.UISet;
+	import cn.flashk.controls.skin.sourceSkin.ListItemSourceSkin;
+	
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 	import flash.display.DisplayObject;
@@ -12,18 +24,6 @@ package cn.flashk.controls.support
 	import flash.text.TextField;
 	import flash.text.TextFormat;
 	import flash.utils.getDefinitionByName;
-	
-	import cn.flashk.controls.List;
-	import cn.flashk.controls.events.ListEvent;
-	import cn.flashk.controls.interfaces.IListItemRender;
-	import cn.flashk.controls.managers.DefaultStyle;
-	import cn.flashk.controls.managers.SkinLoader;
-	import cn.flashk.controls.managers.SkinManager;
-	import cn.flashk.controls.managers.SkinThemeColor;
-	import cn.flashk.controls.managers.SourceSkinLinkDefine;
-	import cn.flashk.controls.managers.StyleManager;
-	import cn.flashk.controls.managers.UISet;
-	import cn.flashk.controls.skin.sourceSkin.ListItemSourceSkin;
 	
 	public class ListItemRender extends Sprite implements IListItemRender
 	{
@@ -44,6 +44,7 @@ package cn.flashk.controls.support
 		protected var _click:SimpleButton;
 		protected var _clickArea:Shape;
 		protected var _index:int;
+		protected var _needResetTextColor:Boolean = true;
 
 		public function get index():int
 		{
@@ -135,8 +136,11 @@ package cn.flashk.controls.support
 		{
 			if(_selected == false){
 				if(bg)  bg.alpha = StyleManager.listOverAlpha;
-				tf.color = SkinThemeColor.itemMouseOverTextColor;
-				txt.setTextFormat(tf);
+				if(_needResetTextColor)
+				{
+					tf.color = SkinThemeColor.itemMouseOverTextColor;
+					txt.setTextFormat(tf);
+				}
 				if(skin != null){
 					skin.showState(1);
 				}
@@ -146,8 +150,11 @@ package cn.flashk.controls.support
 		public function showSelect(event:MouseEvent=null):void
 		{
 			if(bg)  bg.alpha = StyleManager.listClickAlpha;
-			tf.color = SkinThemeColor.itemOverTextColor;
-			txt.setTextFormat(tf);
+			if(_needResetTextColor)
+			{
+				tf.color = SkinThemeColor.itemOverTextColor;
+				txt.setTextFormat(tf);
+			}
 			txt.defaultTextFormat =tf ;
 			if(skin != null){
 				skin.showState(2);
@@ -158,8 +165,11 @@ package cn.flashk.controls.support
 		{
 			if(_selected == false){
 				if(bg) bg.alpha = _mouseOutAlpha;
-				tf.color = ColorConversion.transformWebColor(DefaultStyle.textColor);
-				txt.setTextFormat(tf);
+				if(_needResetTextColor)
+				{
+					tf.color = ColorConversion.transformWebColor(DefaultStyle.textColor);
+					txt.setTextFormat(tf);
+				}
 			
 				txt.defaultTextFormat =tf ;
 				if(skin != null){

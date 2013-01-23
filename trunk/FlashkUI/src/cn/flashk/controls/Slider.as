@@ -26,6 +26,8 @@ package cn.flashk.controls
 
 	public class Slider extends UIComponent
 	{
+		public static var smothLess:Number = 3.1;
+		
 		protected var slider1:Sprite;
 		protected var slider2:Sprite;
 		protected var bar:Sprite;
@@ -50,9 +52,30 @@ package cn.flashk.controls
 			super();
 			_compoWidth = 200;
 			_compoHeight = 4;
+			_smothLess = Slider.smothLess;
 			setSize(_compoWidth, _compoHeight);
 		}
 		
+		public function get smothStep():uint
+		{
+			return _smothStep;
+		}
+
+		public function set smothStep(value:uint):void
+		{
+			_smothStep = value;
+		}
+
+		public function get smothLess():Number
+		{
+			return _smothLess;
+		}
+
+		public function set smothLess(value:Number):void
+		{
+			_smothLess = value;
+		}
+
 		public function get spaceNum():uint
 		{
 			return _spaceNum;

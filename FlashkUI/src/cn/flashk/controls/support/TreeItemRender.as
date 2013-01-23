@@ -50,7 +50,7 @@ package cn.flashk.controls.support
 			var isSetIcon:Boolean = false;
 			if(_isNeedSetText)
 			{
-				txt.text = String(xml.@label);
+				txt.htmlText = String(xml.@label);
 				txt.width = txt.textWidth + 5;
 			}
 			padding =Number(_list.getStyleValue("textPadding")) + level*levelSpace;

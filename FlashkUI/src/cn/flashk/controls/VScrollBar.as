@@ -1,5 +1,16 @@
 package cn.flashk.controls 
 {
+	import cn.flashk.controls.events.UIComponentEvent;
+	import cn.flashk.controls.managers.SkinLoader;
+	import cn.flashk.controls.managers.SkinManager;
+	import cn.flashk.controls.managers.SourceSkinLinkDefine;
+	import cn.flashk.controls.managers.StyleManager;
+	import cn.flashk.controls.managers.UISet;
+	import cn.flashk.controls.skin.ActionDrawSkin;
+	import cn.flashk.controls.skin.VScrollBarSkin;
+	import cn.flashk.controls.skin.sourceSkin.VScrollBarSourceSkin;
+	import cn.flashk.controls.support.UIComponent;
+	
 	import flash.display.DisplayObject;
 	import flash.display.DisplayObjectContainer;
 	import flash.display.InteractiveObject;
@@ -15,17 +26,6 @@ package cn.flashk.controls
 	import flash.utils.Timer;
 	import flash.utils.clearTimeout;
 	import flash.utils.setTimeout;
-	
-	import cn.flashk.controls.events.UIComponentEvent;
-	import cn.flashk.controls.managers.SkinLoader;
-	import cn.flashk.controls.managers.SkinManager;
-	import cn.flashk.controls.managers.SourceSkinLinkDefine;
-	import cn.flashk.controls.managers.StyleManager;
-	import cn.flashk.controls.managers.UISet;
-	import cn.flashk.controls.skin.ActionDrawSkin;
-	import cn.flashk.controls.skin.VScrollBarSkin;
-	import cn.flashk.controls.skin.sourceSkin.VScrollBarSourceSkin;
-	import cn.flashk.controls.support.UIComponent;
 	
 	/**
 	 * 滚动时触发
@@ -121,6 +121,7 @@ package cn.flashk.controls
 		protected var _arrowFrameMoveSpeed:Number = 4;
 		protected var _isFrameMove:Boolean = false;
 		protected var _isDraging:Boolean = false;
+		protected var _isMouseDrag:Boolean = false;
 		
 		public function VScrollBar() 
 		{
@@ -537,6 +538,7 @@ package cn.flashk.controls
 			max = _compoHeight - lessNum * 2 - int(scrollerRef.height);
 			scrollerRef.startDrag(false, new Rectangle(0, lessNum, 0, max ));
 			_isDraging = true;
+			_isMouseDrag = true;
 			unableUpdate = true;
 			this.stage.addEventListener(MouseEvent.MOUSE_UP, stopDragScroller);
 			this.stage.addEventListener(MouseEvent.MOUSE_MOVE, updateToPos);
@@ -580,6 +582,7 @@ package cn.flashk.controls
 			}
 			scrollerRef.stopDrag();
 			_isDraging = false;
+			_isMouseDrag = false;
 			this.stage.removeEventListener(MouseEvent.MOUSE_MOVE, updateToPos);
 			this.stage.removeEventListener(MouseEvent.MOUSE_UP, stopDragScroller);
 			isDrag = false;
@@ -674,6 +677,7 @@ package cn.flashk.controls
 		
 		protected function updateScrollerY():void 
 		{
+			if(_isDraging || _isMouseDrag) return;
 			var lessNum:Number = _hideArrow ? 0 : _compoWidth;
 			max = _compoHeight - lessNum * 2 - scrollerRef.height;;
 			if(isTextField)
